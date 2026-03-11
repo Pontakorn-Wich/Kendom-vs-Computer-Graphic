@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 3 & 4 - Bresenham Algorithm</title>
+    <style>
+        /* Display a border around the canvas for clarity */
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Line and Circle Drawing</h1>
+    <div class="controls">
+        <label><input type="radio" name="mode" value="line" checked> Line</label>
+        <label><input type="radio" name="mode" value="circle"> Circle</label>
+        <button id="clearBtn">Clear All</button>
+    </div>
+    <!-- WebGL drawing canvas -->
+    <canvas id="glCanvas" width="512" height="512"></canvas>
+
+    <!-- Include the clipping logic and main app scripts -->
+    <script src="lineAlg.js"></script>
+    <script src="circleAlg.js"></script>
+    <script src="lab3.js"></script>
+</body>
+
+</html>
